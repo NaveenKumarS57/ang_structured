@@ -1,0 +1,26 @@
+<div>
+  <hr style="width: 400px;" color="red">
+  <hr style="width: 200px;" color="red">
+  <!-- Toolbar -->
+  <mat-toolbar class="toolbar" role="banner">
+    <div class="card-container">
+      <button class="card card-small" [routerLink]="'/admin/home'" tabindex="0">
+        <img src="assets/images/Kaar-Logo1.png" width="200%" height="200%">
+      </button>
+    </div>
+    <span>Welcome</span>
+    <span class="spacebar"></span>
+    <a class="nav-link" routerLink="./about">About</a>
+    <span class="spacebar-btn"></span>
+    <a class="nav-link" routerLink="./services">Services</a>
+    <span class="spacebar-btn"></span>
+    <a class="nav-link" routerLink="./contact">Contact</a>
+
+    <span class="spacebar"></span>
+    <!-- <span class="example-spacer-btw"></span> -->
+    <!-- <button class="logout-btn" mat-raised-button (click)="logout()" style="right: 20px;">logout</button> -->
+    <div class="card-container">
+      <button mat-raised-card class="card card-logout" (click)="logout()" tabindex="0">logout</button>
+    </div>
+  </mat-toolbar>
+</div>
