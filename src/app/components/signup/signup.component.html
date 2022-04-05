@@ -1,1 +1,47 @@
-<p>signup works!</p>
+<div id="main">
+  <div class="login-wrapper" fxLayout="row">
+    <mat-card class="box">
+      <mat-card-header style="font-size: 30px;">Sign Up</mat-card-header>
+      <mat-card-content>
+        <form [formGroup]="signupForm" (ngSubmit)="Signup()">
+          <div class="form-group">
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" formControlName="mailid" placeholder="Enter mailid" required>
+              <mat-error *ngIf="signupForm.invalid">Please enter Mail Id</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="form-group">
+            <mat-form-field class="example-full-width">
+              <input matInput type="password" id="password" placeholder="Enter Password" class="form-control"
+                  formControlName="password" name="password" required/>
+              <mat-error *ngIf="signupForm.invalid">Please enter password</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" formControlName="name" placeholder="Enter your Name" required>
+              <mat-error *ngIf="signupForm.invalid">Please enter your Name</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="form-group">
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" formControlName="empid" placeholder="Enter employee id" required>
+              <mat-error *ngIf="signupForm.invalid">Please enter Employee Id</mat-error>
+            </mat-form-field>
+          </div>
+
+          <button mat-stroked-button color="accent" type="submit" [disabled]="signupForm.invalid" fxFill>signup</button>
+        </form>
+        <br>
+        <span style="font-size: 18px;">if you are registered user kindly sign in</span>
+        <br>
+      <br>
+      <button mat-raised-button color="primary" [routerLink]="'/login'" fxFill>Sign In</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+

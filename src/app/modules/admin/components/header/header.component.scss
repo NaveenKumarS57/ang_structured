@@ -10,8 +10,8 @@
   border-radius: 4px;
   border: 1px solid #eee;
   background-color: #fafafa;
-  height: 40px;
-  width: 200px;
+  height: 25px;
+  width: 25px;
   margin: 0 8px 16px;
   padding: 16px;
   display: flex;
@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  line-height: 24px;
+  line-height: 25px;
 }
 
 .card-container .card:not(:last-child) {
@@ -31,11 +31,13 @@
   width: 25px;
 }
 .card.card-logout {
-  height: 5px;
-  width: 40px;
+  height: 2px;
+  width: 20px;
+  font-size: 15px;
 }
 .card.card-logout:hover {
-  background-color: lightpink;
+  background-color: grey;
+  color: white;
 }
 
 .card-container .card:not(.highlight-card) {
@@ -53,7 +55,7 @@
 
 .card.highlight-card {
   background-color: #1976d2;
-  color: white;
+  color: red;
   font-weight: 600;
   border: none;
   width: auto;
@@ -73,7 +75,6 @@
 .toolbar{
   position: fixed;
   background-color: transparent ;
-
 }
 
 .spacebar{
@@ -81,7 +82,7 @@
 }
 
 .logout-btn:hover{
-  background-color: #e76868;
+  background-color: transparent;
   color: white;
 }
 .spacebar-btn{
@@ -89,11 +90,15 @@
 }
 
 .nav-link{
-  color: black;
+  color: red;
   // width: 30px;
   // height: 15px;
+  font: optional;
 }
 .nav-link:hover{
-  color: red;
+  color: blue;
 }
 
+a{
+  text-decoration: none;
+}

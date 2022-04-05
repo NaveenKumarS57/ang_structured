@@ -10,7 +10,11 @@ import { ServicesComponent } from './components/services/services.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 import { AngularMaterialModule } from 'src/app/angular-material.module';
 import { ContactComponent } from './components/contact/contact.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,11 @@ import { ContactComponent } from './components/contact/contact.component';
     CommonModule,
     AdminRoutingModule,
     AngularMaterialModule,
+    FormsModule,
+    HttpClientModule,
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    FlexLayoutModule
   ]
 })
 export class AdminModule { }

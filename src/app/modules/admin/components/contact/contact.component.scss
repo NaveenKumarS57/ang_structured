@@ -1,0 +1,27 @@
+.col{
+  columns: 1;
+  /* column-gap: 200px; */
+  /* column-rule: 1px solid black; */
+  /* resize: vertical;
+  overflow: auto; */
+}
+table{
+  border: 1px solid black;
+}
+th{
+  background-color: lightgrey;
+  align-items: center center;
+}
+th,tr,td{
+  border: 1px  solid black;
+  word-spacing: normal;
+  color: blue;
+}
+
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+.info-text {
+  text-align: center;
+}

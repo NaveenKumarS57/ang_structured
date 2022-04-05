@@ -5,27 +5,24 @@
       <mat-card-header style="font-size: 50px;"><fa-icon [icon]="faLock"></fa-icon></mat-card-header>
       <br>
       <mat-card-header style="font-size: 30px;">Login</mat-card-header>
-      <p style="color: lightslategray; text-align: center;">
+      <!-- <p style="color: lightslategray; text-align: center;">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please enter your login
-        details&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        details&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> -->
       <mat-card-content>
 
         <form class="example-form" [formGroup]="loginForm" (ngSubmit)="Login()">
           <div class="form-group">
             <mat-form-field class="example-full-width">
-              <input matInput type="email" id="email" placeholder="Enter your email" class="form-control" formControlName="mailid"
-              name="email" required/>
+              <input matInput type="email" id="email" placeholder="Enter your email" class="form-control" formControlName="mailid" name="email" required/>
               <mat-error *ngIf="loginForm.invalid">Please enter mailid</mat-error>
             </mat-form-field>
 
           </div>
           <div class="form-group">
             <mat-form-field class="example-full-width">
-              <input matInput type="password" id="password" placeholder="Enter Password" class="form-control"
-                  formControlName="password" name="password" required/>
+              <input matInput type="password" id="password" placeholder="Enter Password" class="form-control" formControlName="password" name="password" required/>
               <mat-error *ngIf="loginForm.invalid">Please enter password</mat-error>
             </mat-form-field>
-
           </div>
           <button class="btn-block" mat-raised-button [disabled]="loginForm.invalid" color="primary" type="submit">Login</button>
         </form>
@@ -41,6 +38,15 @@
   </div>
 </div>
 
+<!--
+<div class="form-group">
+  <mat-form-field class="example-full-width">
+    <input type="password" id="password" placeholder="Enter Password" class="form-control"
+        formControlName="password" name="password" required/>
+    <mat-error *ngIf="loginForm.invalid">Please enter password</mat-error>
+  </mat-form-field>
+
+</div> -->
 <!--
 
 <div class="container vh-100">
